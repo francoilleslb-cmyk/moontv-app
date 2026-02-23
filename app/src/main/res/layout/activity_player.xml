@@ -95,7 +95,6 @@
             android:lineSpacingMultiplier="1.4"
             android:visibility="gone" />
 
-        <!-- Botón reintento — aparece cuando hay error -->
         <Button
             android:id="@+id/btn_retry"
             android:layout_width="wrap_content"
@@ -105,6 +104,8 @@
             android:backgroundTint="@color/moon_purple"
             android:layout_marginTop="16dp"
             android:visibility="gone" />
+
+    </LinearLayout>
 
     <!-- Botones de servidor (multi-servidor fallback) -->
     <LinearLayout
