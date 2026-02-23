@@ -76,7 +76,6 @@
 
     </LinearLayout>
 
-    <!-- Overlay de error — centro de pantalla -->
     <LinearLayout
         android:layout_gravity="center"
         android:orientation="vertical"
@@ -117,6 +116,8 @@
         android:layout_marginBottom="32dp"
         android:visibility="gone"
         android:background="#88000000"
-        android:padding="8dp" />
+        android:padding="8dp">
+
+    </LinearLayout>
 
 </FrameLayout>
