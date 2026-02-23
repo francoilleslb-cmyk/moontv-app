@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Moon TV</string>
-    <string name="loading">Cargando…</string>
+    <string name="loading">Cargando...</string>
     <string name="error_no_connection">Sin conexión al servidor</string>
     <string name="error_stream">No se puede reproducir este canal</string>
     <string name="live">EN VIVO</string>
-    <string name="search_hint">Buscar canales…</string>
+    <string name="search_hint">Buscar canales...</string>
 </resources>
