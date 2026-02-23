@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MoonTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/moon_purple</item>
+        <item name="colorPrimaryVariant">@color/moon_purple_light</item>
+        <item name="colorOnPrimary">@color/moon_text_primary</item>
+        <item name="colorSecondary">@color/moon_blue</item>
+        <item name="android:windowBackground">@color/moon_bg_dark</item>
+        <item name="android:statusBarColor">@color/moon_bg_dark</item>
+        <item name="android:navigationBarColor">@color/moon_bg_dark</item>
+    </style>
+
+    <style name="Theme.MoonTV.Splash" parent="Theme.MoonTV">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/moon_bg_dark</item>
+    </style>
+
+    <style name="Theme.MoonTV.Player" parent="Theme.MoonTV">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+</resources>

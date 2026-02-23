@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Fondo oscuro -->
+    <path
+        android:fillColor="#0F0F1A"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+    <!-- Luna morada -->
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M54,20 C43,20 34,29 34,40 C34,51 43,60 54,60 C48,56 44,49 44,42 C44,31 52,22 62,22 C59,20 57,20 54,20 Z" />
+    <!-- Estrella 1 -->
+    <path
+        android:fillColor="#A855F7"
+        android:pathData="M72,30 L73.5,35 L78,35 L74.5,38 L75.5,43 L72,40 L68.5,43 L69.5,38 L66,35 L70.5,35 Z" />
+    <!-- Estrella 2 pequeña -->
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M65,52 L65.8,54.5 L68.5,54.5 L66.5,56 L67,58.5 L65,57 L63,58.5 L63.5,56 L61.5,54.5 L64.2,54.5 Z" />
+    <!-- Texto base: TV letras -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,72 L34,72 L34,88 L38,88 L38,72 L42,72 L42,68 L30,68 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,68 L49,83 L54,68 L58,68 L51,88 L47,88 L40,68 Z" />
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M62,68 L78,68 L78,72 L62,72 Z" />
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M62,78 L75,78 L75,82 L62,82 Z" />
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M62,88 L78,88 L78,84 L62,84 Z" />
+</vector>

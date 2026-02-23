@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fondo - casi negro como Bix Plus -->
+    <color name="moon_bg_dark">#0D0D0D</color>
+    <color name="moon_bg_card">#1A1A1A</color>
+    <color name="moon_bg_card2">#222222</color>
+
+    <!-- Acento principal — morado Moon TV (reemplaza el naranja de Bix) -->
+    <color name="moon_purple">#7C3AED</color>
+    <color name="moon_purple_light">#A78BFA</color>
+    <color name="moon_purple_faint">#2D1B5E</color>
+    <color name="moon_blue">#3B82F6</color>
+
+    <!-- Textos -->
+    <color name="moon_text_primary">#FFFFFF</color>
+    <color name="moon_text_secondary">#9CA3AF</color>
+
+    <!-- Estados -->
+    <color name="moon_error">#EF4444</color>
+    <color name="moon_live_red">#EF4444</color>
+
+    <!-- Badge popular -->
+    <color name="moon_popular_badge">#7C3AED</color>
+</resources>

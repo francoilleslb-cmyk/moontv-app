@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ═══════════════════════════════════════════════════════════
+   Moon TV — Configuración de seguridad de red
+  ═══════════════════════════════════════════════════════════
+
+  IMPORTANTE: Los canales IPTV usan HTTP:// puro, IPs directas
+  y puertos no estándar (ej: http://123.45.67.89:8080/live/...).
+
+  Sin esta config, Android API 28+ bloquea TODO el tráfico HTTP
+  y los canales simplemente no reproducen (error silencioso).
+
+  ¿Por qué el tv-app original no funcionaba?
+  → Muy probablemente le faltaba este archivo o usesCleartextTraffic.
+-->
+<network-security-config>
+
+    <!--
+      base-config: permite HTTP en TODOS los dominios e IPs.
+      Esto es necesario porque las URLs de IPTV son impredecibles:
+      pueden ser IPs directas, dominios sin HTTPS, puertos raros, etc.
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- Certificados del sistema (para HTTPS) -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+</network-security-config>
