@@ -19,7 +19,7 @@ import com.moontv.app.utils.FavoritesManager;
 public class SettingsActivity extends AppCompatActivity {
 
     private EditText etBackendUrl;
-    private Switch   switchAutoplay;
+    private Switch switchAutoplay;
     private TextView tvFavCount, tvAppVersion;
     private AppPreferences prefs;
 
@@ -34,18 +34,12 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        etBackendUrl   = findViewById(R.id.et_backend_url);
+        etBackendUrl = findViewById(R.id.et_backend_url);
         switchAutoplay = findViewById(R.id.switch_autoplay);
-        tvFavCount     = findViewById(R.id.tv_fav_count);
-        tvAppVersion   = findViewById(R.id.tv_app_version);
+        tvFavCount = findViewById(R.id.tv_fav_count);
+        tvAppVersion = findViewById(R.id.tv_app_version);
 
-        // Ocultar sección de usuario (sin login)
-        android.view.View userSection = findViewById(R.id.user_section);
-        if (userSection != null) userSection.setVisibility(android.view.View.GONE);
-
-        // Ocultar botón logout
-        android.view.View btnLogout = findViewById(R.id.btn_logout);
-        if (btnLogout != null) btnLogout.setVisibility(android.view.View.GONE);
+        // Se removió sección usuario y logout de Settings activity
 
         findViewById(R.id.btn_back).setOnClickListener(v -> onBackPressed());
 
@@ -84,9 +78,13 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void saveBackendUrl() {
         String url = etBackendUrl.getText().toString().trim();
-        if (TextUtils.isEmpty(url)) { etBackendUrl.setError("URL vacía"); return; }
+        if (TextUtils.isEmpty(url)) {
+            etBackendUrl.setError("URL vacía");
+            return;
+        }
         if (!url.startsWith("http://") && !url.startsWith("https://")) {
-            etBackendUrl.setError("Debe comenzar con http:// o https://"); return;
+            etBackendUrl.setError("Debe comenzar con http:// o https://");
+            return;
         }
         prefs.setBackendUrl(url);
         RetrofitClient.reset(); // Forzar reconexión con nueva URL
